@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rare Beauty | Cosmetics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="skinCare.css">
+</head>
+<body>
+<style>
+.pyramid-text {
+      text-align: center;
+      line-height: 1.6;
+    }
+    .pyramid-text p {
+      margin: 0 auto;
+      max-width: 80%;
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .pyramid-text p:nth-child(1) { width: 30%; }
+    .pyramid-text p:nth-child(2) { width: 50%; }
+    .pyramid-text p:nth-child(3) { width: 70%; }
+    .pyramid-text p:nth-child(4) { width: 90%; }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .pyramid-text p:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    
+    .font-italic {
+      font-style: italic;
+      color: #6c757d;
+    }
+    </style>
+  <header>
+    <h1 class="text-center py-4">Skin Care Essentials</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_feedback.html">Contact/Feedback</a>
+            </li>
+          </ul>
+          <div 
+          class="box">
+          <input type="text"
+          placeholder="Search">
+          <i class="fas fa-magnifying-glass"></i>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fas fa-shopping-cart"></i> Cart
+                <span class="badge bg-primary rounded-pill">0</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">
+                <i class="fas fa-user"></i> Account
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <section class="about-section">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 pyramid-text">
+          <p class="lead">
+            At <strong>Skin Care Essentials</strong>, we believe beauty begins with healthy skin.
+          </p>
+          <p>
+            Founded with passion for natural ingredients and science-backed formulations.
+          </p>
+          <p>
+            Our collections target all skin types - from hydrating cleansers to rejuvenating serums.
+          </p>
+          <p class="font-italic">
+            Join us in redefining beauty - natural, radiant, and uniquely you.
+          </p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+   <footer>
+    <p>&copy; 2025 Skin Care Essentials. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
